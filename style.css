@@ -1,0 +1,198 @@
+@font-face {
+    font-family: ancla;
+    src: url(./font/sportsfonts-winner-sans-cond-regular.otf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+/* navbar */
+
+.navbar {
+    background-color: black;
+    padding: 20px;
+
+}
+
+
+/* contenido principal */
+
+.main{
+    background-image: url(./multimedia/fondo.jpg);
+    padding: 10px;
+}
+
+h1{
+    padding: 100px;
+    text-align: center;
+    font-family: ancla;
+    font-size: 4rem;
+}
+
+.footer{
+    background-color: black;
+    text-align: center;
+    color: #fff;
+}
+
+div.redes {
+    font-size: 40px;
+    letter-spacing: 20px;
+}
+
+
+::-webkit-scrollbar{
+    display: none;
+}
+
+h3{
+    color: rgb(242, 243, 245);
+}
+
+a:link, a:visited, a:active{
+    text-decoration: none;
+    color: white;
+}
+
+/* index */
+
+.carousel img:hover{
+    transform: scale(1.1);
+    transition: transform .9s;
+}
+
+.video p, h3{
+    padding: 20px;
+}
+
+
+.avatar {
+    border: 2px solid #ccc;
+    background-color: #eee;
+    border-radius: 5px;
+    padding: 16px;
+    margin: 16px 0;
+}
+
+.avatar img{
+    float: left;
+    margin-right: 20px;
+    border-radius: 50%;
+
+}
+
+.botonsubir{
+    position: fixed;
+    right: 40px;
+    bottom: 60px;
+    box-shadow: 0 0 5px #fff,0 0 5px #fff;
+    color: #fff;
+    padding: 10px;
+    font-size: 40px;
+}
+
+.carousel-item{
+    max-height: 400px;
+    object-fit: cover;
+}
+
+.carousel img{
+    min-height: 350px;
+}
+
+
+.servicios{
+    padding: 20px;
+    margin: 30px;
+    border: 10px;
+}
+
+.imgServicios{
+    max-height: 175px;
+    max-width: 262px;
+}
+
+.cardServicios{
+    filter: grayscale(100%);
+}
+
+.cardServicios:hover{
+    filter: grayscale(0%);
+    transition: all 0.9s;
+    transform: scale(1.1);
+}
+
+.item{
+    background-image: url(./multimedia/card1.jpg);
+    background-position: center;
+    background-size: cover;
+    border: 3px solid blue;
+}
+
+.item2{
+    background-image: url(./multimedia/card2.jpg);
+}
+
+.item3{
+    background-image: url(./multimedia/card3.jpg);
+}
+
+.item4{
+    background-image: url(./multimedia/card4.jpg);
+}
+
+.item5{
+    background-image: url(./multimedia/card5.jpg);
+}
+
+/* noticias */
+
+.noticiasFrame{
+    min-height:500px;
+    width:600px; 
+    border: 5px solid blue;
+
+}
+
+/* nosotros */
+
+.cardNosotros{
+    text-align: center;
+}
+
+.cardNosotros img{
+    max-height: 450px;
+}
+
+
+.tittle{
+    font-size: 18px;
+    text-decoration: underline;
+}
+
+
+
+.buttonUs {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 8px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+}
+
+.buttonUs:hover {
+    opacity: 0.7;
+}
+
