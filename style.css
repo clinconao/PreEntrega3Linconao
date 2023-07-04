@@ -21,20 +21,21 @@ html{
 
 }
 
-
 /* contenido principal */
 
 .main{
-    background-image: url(./multimedia/fondo.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.269), rgba(0, 0, 0, 0.269)), url(./multimedia/fondo.jpg);
     padding: 10px;
+    object-fit: cover;
 }
 
 h1{
-    padding: 100px;
+    margin: 100px 0px;
     text-align: center;
     font-family: ancla;
     font-size: 4rem;
 }
+
 
 .footer{
     background-color: black;
@@ -45,6 +46,10 @@ h1{
 div.redes {
     font-size: 40px;
     letter-spacing: 20px;
+}
+
+.externo{
+    margin: auto;
 }
 
 
@@ -68,9 +73,14 @@ a:link, a:visited, a:active{
     transition: transform .9s;
 }
 
-.video p, h3{
+.video p{
     padding: 20px;
+    background: rgba(0, 0, 0, 0.5);
+    color:#f1f1f1;
 }
+
+/* comentarios */
+
 
 
 .avatar {
@@ -85,7 +95,8 @@ a:link, a:visited, a:active{
     float: left;
     margin-right: 20px;
     border-radius: 50%;
-
+    object-fit: cover;
+    aspect-ratio: 1/1;
 }
 
 .botonsubir{
@@ -101,10 +112,13 @@ a:link, a:visited, a:active{
 .carousel-item{
     max-height: 400px;
     object-fit: cover;
+    background-color: white;
+    color: #000;
 }
 
 .carousel img{
     min-height: 350px;
+    opacity: 60%;
 }
 
 
@@ -121,6 +135,7 @@ a:link, a:visited, a:active{
 
 .cardServicios{
     filter: grayscale(100%);
+    margin: 20px;
 }
 
 .cardServicios:hover{
@@ -129,11 +144,30 @@ a:link, a:visited, a:active{
     transform: scale(1.1);
 }
 
+/* servicios pagina */
+
 .item{
+    margin: 20px 0px;
+}
+
+.parrafoOpaco{
+    color: #ccc;
+    background: rgba(0, 0, 0, 0.5);
+    color:#f1f1f1;
+    padding: 20px;
+}
+
+.item img{
+    max-width: 200px;
+    max-height: 200px;
+}
+
+.item1{
     background-image: url(./multimedia/card1.jpg);
-    background-position: center;
-    background-size: cover;
-    border: 3px solid blue;
+}
+
+.item2{
+    background-image: url(./multimedia/card2.jpg);
 }
 
 .item2{
@@ -152,6 +186,12 @@ a:link, a:visited, a:active{
     background-image: url(./multimedia/card5.jpg);
 }
 
+.item6{
+    background-image: url(./multimedia/card6.jpg);
+    background: rgba(0, 0, 0, 0.5);
+    color:#f1f1f1;
+}
+
 /* noticias */
 
 .noticiasFrame{
@@ -165,6 +205,7 @@ a:link, a:visited, a:active{
 
 .cardNosotros{
     text-align: center;
+    color: #ccc;
 }
 
 .cardNosotros img{
@@ -194,5 +235,12 @@ a:link, a:visited, a:active{
 
 .buttonUs:hover {
     opacity: 0.7;
+}
+
+/* contacto pagina */
+
+.formContacto{
+    max-width: 600px;
+    margin: auto;
 }
 
