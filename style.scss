@@ -207,67 +207,29 @@ div.redes{
 }
 
 // pagina nosotros
-
-.about{
-    position: relative;
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 300px;
+    margin: auto;
     text-align: center;
-    width: 50%;
-    color: white;
-    max-width: 400px;
-    max-height: 400px;
-    & .fw-semibold{
-        font-size: 3vw;
+    color: black;
+    background-color: rgba(0, 0, 255, 0.364);
+    & h1 {
+        color: $color2;
     }
-    & img{
-        width: 100%;
-        height: auto;
-        object-fit: fill;
+    & p{
+        color: $color2;
     }
 }
 
-.overlay {
-    position: absolute;
-    bottom: 50%;
-    left: 0;
-    right: 0;
-    background-color: #008bbaca;
-    overflow: hidden;
-    width: 100%;
-    height:0;
-    transition: .9s ease;
+.title {
+    color: rgb(67, 59, 59);
+    font-size: 18px;
 }
-
-.about:hover .overlay{
-    bottom: 0;
-    height: 100%;
-}
-
-.about text{
-    color: white;
-    display: block;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    -webkit-transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    transform: translate(-60%, -50%);
-    text-align: center;
-}
-
 
 @media screen and (max-width: 600px) {
-
-    .aboutbt{
-        font-size: 12px;
-    }
 
     .cardServicios{
         max-width: 450px;
     }
-
-    .about text {
-        font-size: 10px;
-        visibility: hidden;
-    }
 }
-
