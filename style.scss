@@ -1,0 +1,273 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar{
+    display: none;
+}
+
+
+// paleta de colores
+
+$color1: black;
+$color2: rgb(242, 243, 245);
+
+// formatos en general
+
+$pad10: 10px;
+$pad20: 20px;
+$pad30: 30px;
+$logoS: 60px;
+$logoL: 300px;
+
+$h1centrado: 100px 0px;
+
+
+// header
+
+.navbar {
+    background-color: $color1;
+    padding: $pad20;
+}
+
+// main 
+
+a:link, a:visited, a:active{
+    text-decoration: none;
+    color: $color2;
+}
+
+main{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.269), rgba(0, 0, 0, 0.269)),url(./multimedia/fondo.jpg);
+    padding: $pad10;
+    object-fit: cover;
+    & h1{
+        margin: $h1centrado;
+        text-align: center;
+        color: $color2;
+    }
+    & h3{
+        color: $color2;
+        text-align: center;
+    }
+}
+
+.ElAncla{
+    margin: 50px;
+    text-align: center;
+    color: $color2;
+}
+
+.parrafoOpaco{
+    background: rgba(0, 0, 0, 0.5);
+    color:#f1f1f1;
+    padding: $pad20;
+}
+
+.logo{
+    max-width: $logoS;
+}
+
+.carousel-item{
+    max-height: 70vh;
+    background-color: $color2;
+    color: $color1;
+}
+
+.carousel video{
+    object-fit: fill;
+}
+
+.text-block{
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(12, 45, 232, 0.312);
+    color: white;
+    font-size: 2rem;
+}
+
+.servicios{
+    padding: $pad20;
+    border: $pad10;
+    align-items: center;
+    & img{
+        max-height: 175px;
+        max-width: 262px;
+        margin: auto;
+    }
+}
+
+
+.cardServicios{
+    filter: grayscale(100%);
+    margin: 20px;
+    height: 400px;
+    &:hover{
+        filter: grayscale(0%);
+        transition: all 0.9s;
+        transform: scale(1.1);
+    }
+}
+
+
+.avatar {
+    border: 2px solid #ccc;
+    background-color: #eee;
+    border-radius: 5px;
+    padding: 16px;
+    margin: 16px 0;
+    & img{
+        float: left;
+        margin-right: 20px;
+        border-radius: 50%;
+        object-fit: cover;
+        aspect-ratio: 1/1;
+    }
+}
+
+.clima{
+        padding: 20px;
+    align-items: center;
+}
+
+
+// footer
+
+.footer{
+    background-color: $color1;
+    text-align: center;
+    color: $color2;
+}
+
+div.redes{
+    font-size: 40px;
+    letter-spacing: $pad20;
+}
+
+.botonsubir{
+    position: fixed;
+    right: 40px;
+    bottom: 40px;
+    box-shadow: 0 0 10px #345806,0 0 10px #57de2e;
+    padding: 10px;
+    font-size: 40px;
+    font-weight: 200;
+}
+
+// pagina servicios
+
+.itemS{
+    margin: 20px 0px;
+    & img{
+        max-width: 200px;
+        max-height: 200px;
+    }
+}
+
+.itemS1{
+    background-image: url(./multimedia/card1.jpg);
+}
+
+.itemS2{
+    background-image: url(./multimedia/card2.jpg);
+}
+
+
+.itemS3{
+    background-image: url(./multimedia/card3.jpg);
+}
+
+.itemS4{
+    background-image: url(./multimedia/card4.jpg);
+}
+
+.itemS5{
+    background-image: url(./multimedia/card5.jpg);
+}
+
+.itemS6{
+    background-image: url(./multimedia/card6.jpg);
+    background: rgba(0, 0, 0, 0.5);
+    color:#f1f1f1;
+}
+
+// pagina contacto
+
+.formContacto{
+    max-width: 600px;
+    margin: auto;
+}
+
+// pagina nosotros
+
+.about{
+    position: relative;
+    text-align: center;
+    width: 50%;
+    color: white;
+    max-width: 400px;
+    max-height: 400px;
+    & .fw-semibold{
+        font-size: 3vw;
+    }
+    & img{
+        width: 100%;
+        height: auto;
+        object-fit: fill;
+    }
+}
+
+.overlay {
+    position: absolute;
+    bottom: 50%;
+    left: 0;
+    right: 0;
+    background-color: #008bbaca;
+    overflow: hidden;
+    width: 100%;
+    height:0;
+    transition: .9s ease;
+}
+
+.about:hover .overlay{
+    bottom: 0;
+    height: 100%;
+}
+
+.about text{
+    color: white;
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-60%, -50%);
+    text-align: center;
+}
+
+
+@media screen and (max-width: 600px) {
+
+    .aboutbt{
+        font-size: 12px;
+    }
+
+    .cardServicios{
+        max-width: 450px;
+    }
+
+    .about text {
+        font-size: 10px;
+        visibility: hidden;
+    }
+}
+
