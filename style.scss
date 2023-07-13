@@ -46,8 +46,9 @@ a:link, a:visited, a:active{
 
 main{
     background-image: linear-gradient(rgba(0, 0, 0, 0.269), rgba(0, 0, 0, 0.269)),url(./multimedia/fondo.jpg);
-    object-fit: cover;
     padding: $pad10;
+    width: 100%;
+    overflow-x: hidden;
     & h1{
         margin: $h1centrado;
         text-align: center;
@@ -88,7 +89,6 @@ main{
 
 .servicios{
     padding: $pad20;
-    align-items: center;
     & img{
         max-height: 160px;
         max-width: 262px;
@@ -156,7 +156,8 @@ div.redes{
 // pagina servicios
 
 .itemS{
-    margin: 20px 0px;
+    margin: 10px;
+    padding: 10px;
     & img{
         max-width: 200px;
         max-height: 200px;
