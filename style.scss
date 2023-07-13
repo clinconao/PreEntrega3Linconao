@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: 0;
+    justify-content: center;
 }
 
 html{
@@ -45,8 +46,8 @@ a:link, a:visited, a:active{
 
 main{
     background-image: linear-gradient(rgba(0, 0, 0, 0.269), rgba(0, 0, 0, 0.269)),url(./multimedia/fondo.jpg);
-    padding: $pad10;
     object-fit: cover;
+    padding: $pad10;
     & h1{
         margin: $h1centrado;
         text-align: center;
@@ -74,32 +75,22 @@ main{
     max-width: $logoS;
 }
 
-.carousel-item{
-    max-height: 70vh;
-    background-color: $color2;
-    color: $color1;
+.carousel{
+    padding: 10px;
+    padding-top: 35px;
+    &-item{
+        max-height: 60vh;
+        background-color: $color2;
+        color: $color1;
+    }
 }
 
-.carousel video{
-    object-fit: fill;
-}
-
-.text-block{
-    position: relative;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background-color: rgba(12, 45, 232, 0.312);
-    color: white;
-    font-size: 2rem;
-}
 
 .servicios{
     padding: $pad20;
-    border: $pad10;
     align-items: center;
     & img{
-        max-height: 175px;
+        max-height: 160px;
         max-width: 262px;
         margin: auto;
     }
@@ -109,7 +100,7 @@ main{
 .cardServicios{
     filter: grayscale(100%);
     margin: 20px;
-    height: 400px;
+    min-height: 400px;
     &:hover{
         filter: grayscale(0%);
         transition: all 0.9s;
@@ -135,7 +126,7 @@ main{
 
 .clima{
         padding: 20px;
-    align-items: center;
+        align-items: center;
 }
 
 
@@ -207,18 +198,21 @@ div.redes{
 }
 
 // pagina nosotros
-.card {
+.about {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    max-width: 300px;
-    margin: auto;
+    max-width: 320px;
+    padding: 5px;
+    margin: 5px;
     text-align: center;
-    color: black;
     background-color: rgba(0, 0, 255, 0.364);
     & h1 {
         color: $color2;
     }
     & p{
         color: $color2;
+    }
+    & img{
+        max-height: 250px;
     }
 }
 

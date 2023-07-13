@@ -8,9 +8,9 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <!-- enlace BS ini -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
-    <!-- enlace BS fin -->
-    <link rel="stylesheet" href="../style.css">
+    <!-- enlace AOS -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="../style.css">
     <link rel="stylesheet" href="../style.css">
 </head>
 <body>
@@ -56,30 +56,30 @@
 
         <!-- Descripción servicios ini-->
         <div class="container-fluid itemServicios">
-            <div class="row">
+            <div data-aos="fade-right" class="row ">
                 <article class="col-12 border border-dark border-opacity-25 itemS itemS1">
                     <img src="../multimedia/card1.jpg" class="img-fluid float-start" id="servicio1" alt="">
                     <h4>Constitución de empresas</h4>
-                    <p>Ofrecemos un servicio completo y eficiente que te guiará paso a paso en el proceso de crear tu propia empresa. Nuestro equipo de expertos te ayudará a escoger la mejor estructura legal para tu negocio, redactar los estatutos y realizar todos los trámites necesarios ante los organismos correspondientes. Además, te brindaremos asesoría en materia fiscal y laboral para asegurar el éxito de tu empresa desde el inicio. Confía en nosotros y convierte tu idea en una realidad empresarial.</p>
+                    <p>Ofrecemos un servicio completo y eficiente que te guiará paso a paso en el proceso de crear tu propia empresa.</p>
                 </article>
             </div>
-            <div class="row">
+            <div data-aos="fade-left" class="row">
                 <article class="col-12 border border-dark border-opacity-25 itemS itemS2">
                     <img src="../multimedia/card2.jpg" class="img-fluid float-end" id="servicio2" alt="">
                     <h4>Remuneraciones</h4>
-                    <p>Preparación de remuneraciones y liquidaciones de sueldo, es un proceso fundamental en la gestión del personal de tú empresa, que asegura que los trabajadores reciban el pago correcto por su trabajo y cumple con todas las disposiciones legales correspondientes.</p>
+                    <p>Ofrecemos la preparación de remuneraciones y liquidaciones de sueldo, cumple con todas las disposiciones legales correspondientes.</p>
                 </article>
             </div>
 
-            <div class="row">
+            <div data-aos="fade-right" class="row">
                 <article class="col-12 border border-dark border-opacity-25 itemS itemS3">
                     <img src="../multimedia/card3.jpg" class="img-fluid float-start" id="servicio3" alt="">
                     <h4>BackOffice</h4>
-                    <p>Consiste en el servicio de contabilidad externa para llevar a cabo todas las tareas contables y financieras que son necesarias para el correcto funcionamiento de tu negocio. Esto incluye la gestión de la contabilidad, el registro de transacciones, la elaboración de reportes financieros. Al externalizar estas funciones, tu empresa puede ahorrar tiempo y recursos, al tiempo que se aseguran de que se cumplan todas las obligaciones contables.</p>
+                    <p>Consiste en el servicio de contabilidad externa para llevar a cabo todas las tareas contables y financieras que son necesarias para el correcto funcionamiento de tu negocio.</p>
                 </article>
             </div>
 
-            <div class="row">
+            <div data-aos="fade-left" class="row">
                 <article class="col-12 border border-dark border-opacity-25 itemS itemS4">
                     <img src="../multimedia/card4.jpg" class="img-fluid float-end" id="servicio4" alt="">
                     <h4>Cumplimiento tributario</h4>
@@ -87,7 +87,7 @@
                 </article>
             </div>
 
-            <div class="row">
+            <div data-aos="fade-right" class="row">
                 <article class="col-12 border border-dark border-opacity-25 itemS itemS5">
                     <img src="../multimedia/card5.jpg" class="img-fluid float-start" id="servicio5" alt="">
                     <h4>Administrador electoral</h4>
@@ -95,7 +95,7 @@
                 </article>
             </div>
 
-            <div class="row">
+            <div data-aos="fade-left" class="row">
                 <article class="col-12 border border-dark border-opacity-25 itemS itemS6">
                     <img src="../multimedia/card6.jpg" class="img-fluid float-end" id="servicio6" alt="">
                     <h4>Auditoría</h4>
@@ -122,7 +122,10 @@
         <a href=""><i class="fa-brands fa-whatsapp"></i></a>
         </div>
     </footer>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
 </body>
 </html>
