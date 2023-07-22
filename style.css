@@ -122,12 +122,11 @@ div.redes {
 
 .botonsubir {
   position: fixed;
-  right: 40px;
-  bottom: 40px;
-  box-shadow: 0 0 10px #345806, 0 0 10px #57de2e;
-  padding: 10px;
-  font-size: 40px;
-  font-weight: 200;
+  right: 50px;
+  bottom: 70px;
+}
+.botonsubir .fa-circle-up {
+  font-size: 4vh;
 }
 
 .itemS {

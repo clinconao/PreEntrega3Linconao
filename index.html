@@ -22,10 +22,12 @@
 </head>
 <body>
 
-    <!-- navbar inicio -->
-
-    <nav class="navbar navbar-expand-sm navbar-dark fixed-top">
-            <a class="navbar-brand" href="javascript:void(0)"><img class="logo" src="./multimedia/logo.png" alt=""></a>
+    <header>
+    
+        <!-- navbar inicio -->
+    
+        <nav class="navbar navbar-expand-sm navbar-dark fixed-top">
+            <a class="navbar-brand" href="javascript:void(0)"><img class="logo" src="./multimedia/logo.png" alt="Ancla Asesorias Ltda"></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
                 <i class="fa fa-bars"></i>
             </button>
@@ -45,16 +47,16 @@
                     </li>
                 </ul>
             </div>
-    </nav>
-    
+        </nav>
+    </header>
     <!-- navbar fin -->
 
 
     <main class="main">
-
+    
         <!-- Anuncios propios inicio -->
-
-        <div class="container-fluid carousel">
+    
+        <section class="container-fluid carousel">
             <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-indicators">
                     <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
@@ -66,30 +68,34 @@
                 </div>
                 <div class="carousel-inner">
                     <div class="carousel-item active" data-bs-interval="5000">
-                            <video autoplay muted preload loop class="img-fluid" src="./multimedia/videofin1.m4v"></video>
+                        <video autoplay muted preload loop class="img-fluid" src="./multimedia/videofin1.m4v"></video>
                         </a>
                         <div class="carousel-caption d-md-block text-info bg-dark bg-opacity-75">
                             <h3><a href="./pages/servicios.html">Constitución de empresas</a></h3>
                             <p>¿Buscas crear tu propia empresa?</p>
-
+    
                         </div>
                     </div>
                     <div class="carousel-item" data-bs-interval="5000">
-                        
-                            <video autoplay muted preload loop class="img-fluid" src="./multimedia/videofin2.m4v"></video>
-                        
+    
+                        <video autoplay muted preload loop class="img-fluid" src="./multimedia/videofin2.m4v"></video>
+    
                         <div class="carousel-caption d-md-block text-info bg-dark bg-opacity-75">
-                            <a href="./pages/servicios.html"><h3>Cumplimiento tributario</h3></a>
+                            <a href="./pages/servicios.html">
+                                <h3>Cumplimiento tributario</h3>
+                            </a>
                             <p>¿Necesitas asesoría para la gestión de impuestos ante el SII?</p>
                         </div>
                     </div>
                     <div class="carousel-item" data-bs-interval="5000">
-                        
-                            <video autoplay muted preload loop class="img-fluid" src="./multimedia/videocity1.m4v"></video>
-                        
-                        
+    
+                        <video autoplay muted preload loop class="img-fluid" src="./multimedia/videocity1.m4v"></video>
+    
+    
                         <div class="carousel-caption d-md-block text-info bg-dark bg-opacity-75">
-                            <a href="./pages/servicios.html"><h3>BackOffice</h3></a>
+                            <a href="./pages/servicios.html">
+                                <h3>BackOffice</h3>
+                            </a>
                             <p>¿Quieres mantener tu información contable en orden?</p>
                         </div>
                     </div>
@@ -105,154 +111,173 @@
                     <span class="visually-hidden">Siguiente</span>
                 </button>
             </div>
-        </div>
-
+        </section>
+    
         <!-- Anuncios fin -->
-
-    <div class="container-fluid">
-        <h1 class="ElAncla">El Ancla Asesorias Ltda</h1>    
-        <h3 class="parrafoOpaco" >¿Necesitas apoyo contable tributario vigente para tú empresa?</h3>
-    </div>
-
     
-    <!-- servicios responsive -->
-
-    <div class="container-fluid row servicios">
-        <div data-aos="flip-left" class="card col-xs-6 col-sm-6 col-md-4 col-md-3 col-lg-3 bg-secondary text-white cardServicios parrafoOpaco">
-            <img src="./multimedia/card1.jpg" class="card-img-top img-fluid imgServicios" alt="creacion de empresas">
-            <div class="card-body">
-                <h5 class="card-title">Constitución de tu empresa</h5>
-                <p class="card-text text-wrap">Enfocado para empresa que buscan llevar la información financiera de su empresa de forma externalizada</p>
-                <a href="./pages/servicios.html" class="btn btn-primary position-absolute bottom-0 start-60 translate-middle-y">Ver más</a>
+        <article class="container-fluid">
+            <h1 class="ElAncla">El Ancla Asesorias Ltda</h1>
+            <h3 class="parrafoOpaco">¿Necesitas apoyo contable tributario vigente para tú empresa?</h3>
+        </article>
+    
+    
+        <!-- servicios responsive -->
+    
+        <section class="container-fluid row servicios">
+            <div data-aos="flip-left"
+                class="card col-xs-6 col-sm-6 col-md-4 col-md-3 col-lg-3 bg-secondary text-white cardServicios parrafoOpaco">
+                <img src="./multimedia/card1.jpg" class="card-img-top img-fluid imgServicios" alt="creacion de empresas">
+                <div class="card-body">
+                    <h5 class="card-title">Constitución de tu empresa</h5>
+                    <p class="card-text text-wrap">Tu empresa con información financiera externalizada</p>
+                    <a href="./pages/servicios.html"
+                        class="btn btn-primary position-absolute bottom-0 start-60 translate-middle-y">Ver más</a>
+                </div>
             </div>
+    
+            <div data-aos="flip-left"
+                class="card col-xs-6 col-sm-6 col-md-4 col-md-3 col-lg-3 bg-secondary text-white cardServicios parrafoOpaco">
+                <img src="./multimedia/card2.jpg" class="card-img-top imgServicios" alt="pago de remuneraciones">
+                <div class="card-body">
+                    <h5 class="card-title">Remuneraciones</h5>
+                    <p class="card-text">Preparación de liquidaciones de sueldo y libro de remuneraciones</p>
+                    <a href="./pages/servicios.html#servicio1"
+                        class="btn btn-primary position-absolute bottom-0 start-60 translate-middle-y">Ver más</a>
+                </div>
+            </div>
+    
+            <div data-aos="flip-left"
+                class="card col-xs-6 col-sm-6 col-md-4 col-md-3 col-lg-3 bg-secondary text-white cardServicios parrafoOpaco">
+                <img src="./multimedia/card3.jpg" class="card-img-top imgServicios" alt="servicios contables externos">
+                <div class="card-body">
+                    <h5 class="card-title">BackOffice</h5>
+                    <p class="card-text">Servicio de contabilidad externa para eficiencia y tranquilidad financiera</p>
+                    <a href="./pages/servicios.html#servicio2"
+                        class="btn btn-primary position-absolute bottom-0 start-60 translate-middle-y">Ver más</a>
+                </div>
+            </div>
+    
+            <div data-aos="flip-left"
+                class="card col-xs-6 col-sm-6 col-md-4 col-md-3 col-lg-3 bg-secondary text-white cardServicios parrafoOpaco">
+                <img src="./multimedia/card4.jpg" class="card-img-top imgServicios" alt="tax">
+                <div class="card-body">
+                    <h5 class="card-title">Cumplimiento tributario</h5>
+                    <p class="card-text">Revisión de leyes y normativas que fiscaliza el SII,
+                        personas y empresas</p>
+                    <a href="./pages/servicios.html#servicio3"
+                        class="btn btn-primary position-absolute bottom-0 start-60 translate-middle-y">Ver más</a>
+                </div>
+            </div>
+    
+            <div data-aos="flip-left"
+                class="card col-xs-6 col-sm-6 col-md-4 col-md-3 col-lg-3 bg-secondary text-white cardServicios parrafoOpaco">
+                <img src="./multimedia/card5.jpg" class="card-img-top imgServicios" alt="Administrador electoral">
+                <div class="card-body">
+                    <h5 class="card-title">Administrador electoral</h5>
+                    <p class="card-text">Registro contable para elecciones políticas según normativa
+                        del Servel</p>
+                    <a href="./pages/servicios.html#servicio5"
+                        class="btn btn-primary position-absolute bottom-0 start-60 translate-middle-y">Ver más</a>
+                </div>
+            </div>
+    
+            <div data-aos="flip-left"
+                class="card col-xs-6 col-sm-6 col-md-4 col-md-3 col-lg-3 bg-secondary text-white cardServicios parrafoOpaco">
+                <img src="./multimedia/card6.jpg" class="card-img-top imgServicios" alt="auditoria">
+                <div class="card-body">
+                    <h5 class="card-title">Auditoría</h5>
+                    <p class="card-text">Análisis detallado de cuentas y verificación de procesos de una empresa.</p>
+                    <a href="./pages/servicios.html#servicio6"
+                        class="btn btn-primary position-absolute bottom-0 start-60 translate-middle-y">Ver más</a>
+                </div>
+            </div>
+    
+    
+        </section>
+    
+        <!-- fin servicios -->
+    
+    
+        <!-- comentarios clientes responsive -->
+    
+        <article>
+            <div class=>
+                <h2 class="parrafoOpaco">Testimonio de nuestros clientes</h2>
+                <p class="parrafoOpaco">En el mundo de los negocios y las finanzas, la confianza es un factor clave para el
+                    éxito. Y qué mejor manera de generar confianza que a través de los testimonios de nuestros clientes
+                    satisfechos:</p>
+            </div>
+    
+            <div class="container-fluid row">
+                <div class="container avatar col-sm-6" data-aos="zoom-out-right">
+                    <img src="./multimedia/avatar1.jpg" alt="Avatar" style="width:90px">
+                    <p><span>Leon Lion.</span> CEO at Selva.</p>
+                    <p>Muy buena atención y muy profesionales en lo que hacen</p>
+                </div>
+    
+                <div class="container avatar col-sm-6" data-aos="zoom-out-left">
+                    <img src="./multimedia/avatar2.jpg" alt="Avatar" style="width:90px">
+                    <p><span>Cuer Nos</span> CEO at Papa Noe</p>
+                    <p>Tienen dedicación y te explican muy bien los trabajos que realizan</p>
+                </div>
+    
+                <div class="container avatar col-sm-6" data-aos="zoom-out-right">
+                    <img src="./multimedia/avatar3.jpg" alt="Avatar" style="width:90px">
+                    <p><span>Balto Wolf</span> CEO at Mentetiburon</p>
+                    <p>Son buenos en lo que hacen</p>
+                </div>
+    
+                <div class="container avatar col-sm-6" data-aos="zoom-out-left">
+                    <img src="./multimedia/avatar4.jpg" alt="Avatar" style="width:90px">
+                    <p><span>Bad Bunny</span> CEO at Willy Wonka</p>
+                    <p>La mejor contratación de servicios que hemos tenido como empresa</p>
+                </div>
+    
+        </article>
         </div>
     
-        <div data-aos="flip-left" class="card col-xs-6 col-sm-6 col-md-4 col-md-3 col-lg-3 bg-secondary text-white cardServicios parrafoOpaco">
-            <img src="./multimedia/card2.jpg" class="card-img-top imgServicios" alt="pago de remuneraciones">
-            <div class="card-body">
-                <h5 class="card-title">Remuneraciones</h5>
-                <p class="card-text">Preparación de liquidaciones de sueldo y libro de remuneraciones, de tu empresa</p>
-                <a href="./pages/servicios.html#servicio1" class="btn btn-primary position-absolute bottom-0 start-60 translate-middle-y">Ver más</a>
-            </div>
-        </div>
-    
-        <div data-aos="flip-left" class="card col-xs-6 col-sm-6 col-md-4 col-md-3 col-lg-3 bg-secondary text-white cardServicios parrafoOpaco">
-            <img src="./multimedia/card3.jpg" class="card-img-top imgServicios" alt="servicios externos">
-            <div class="card-body">
-                <h5 class="card-title">BackOffice</h5>
-                <p class="card-text">Servicio de contabilidad externa para eficiencia y tranquilidad financiera.</p>
-                <a href="./pages/servicios.html#servicio2" class="btn btn-primary position-absolute bottom-0 start-60 translate-middle-y">Ver más</a>
-            </div>
-        </div>
-    
-        <div data-aos="flip-left" class="card col-xs-6 col-sm-6 col-md-4 col-md-3 col-lg-3 bg-secondary text-white cardServicios parrafoOpaco">
-            <img src="./multimedia/card4.jpg" class="card-img-top imgServicios" alt="tax">
-            <div class="card-body">
-                <h5 class="card-title">Cumplimiento tributario</h5>
-                <p class="card-text">Revisión de leyes y normativas que fiscaliza el Servicio de Impuestos Internos, personas y empresas.</p>
-                <a href="./pages/servicios.html#servicio3" class="btn btn-primary position-absolute bottom-0 start-60 translate-middle-y">Ver más</a>
-            </div>
-        </div>
+        <!-- comentarios clientes fin -->
 
-        <div data-aos="flip-left" class="card col-xs-6 col-sm-6 col-md-4 col-md-3 col-lg-3 bg-secondary text-white cardServicios parrafoOpaco">
-            <img src="./multimedia/card5.jpg" class="card-img-top imgServicios" alt="caja de votacion">
-            <div class="card-body">
-                <h5 class="card-title">Administrador electoral</h5>
-                <p class="card-text">Registro detallado de ingresos y gastos para elecciones políticas según normativa del Servel.</p>
-                <a href="./pages/servicios.html#servicio5" class="btn btn-primary position-absolute bottom-0 start-60 translate-middle-y">Ver más</a>
-            </div>
-        </div>
-
-        <div data-aos="flip-left" class="card col-xs-6 col-sm-6 col-md-4 col-md-3 col-lg-3 bg-secondary text-white cardServicios parrafoOpaco">
-            <img src="./multimedia/card6.jpg" class="card-img-top imgServicios" alt="auditoria">
-            <div class="card-body">
-                <h5 class="card-title">Auditoría</h5>
-                <p class="card-text">Análisis detallado de cuentas y verificación de procesos de una empresa.</p>
-                <a href="./pages/servicios.html#servicio6" class="btn btn-primary position-absolute bottom-0 start-60 translate-middle-y">Ver más</a>
-            </div>
-        </div>
-
-
-    </div>
-
-    <!-- fin servicios -->
-
-
-    <!-- comentarios clientes responsive -->
-
-    <article>
-        <div class=>
-            <h2 class="parrafoOpaco">Testimonio de nuestros clientes</h2>
-            <p class="parrafoOpaco">En el mundo de los negocios y las finanzas, la confianza es un factor clave para el éxito. Y qué mejor manera de generar confianza que a través de los testimonios de nuestros clientes satisfechos:</p>
-        </div>
-    
-        <div class="container-fluid row">
-            <div class="container avatar col-sm-6" data-aos="zoom-out-right">
-                <img src="./multimedia/avatar1.jpg" alt="Avatar" style="width:90px">
-                <p><span>Leon Lion.</span> CEO at Selva.</p>
-                <p>Muy buena atención y muy profesionales en lo que hacen</p>
-            </div>
+        <section>
+            <h3 class="parrafoOpaco">Enlances de interes e información relevante</h3>
+            <div class="container row clima">
+                <div class="col col-sm-12 col-md-3" id="cont_9ae40633a57ab070e5c0f8d8ec6c24a0">
+                    <script type="text/javascript" async
+                        src="https://www.meteored.cl/wid_loader/9ae40633a57ab070e5c0f8d8ec6c24a0"></script>
+                </div>
+                <div class="col col-sm-12 col-md-3" id="cont_a2edf0cb7d23085cfb53152a9cc7e613">
+                    <script type="text/javascript" async
+                        src="https://www.meteored.cl/wid_loader/a2edf0cb7d23085cfb53152a9cc7e613"></script>
+                </div>
         
-            <div class="container avatar col-sm-6" data-aos="zoom-out-left">
-                <img src="./multimedia/avatar2.jpg"  alt="Avatar" style="width:90px">
-                <p><span>Cuer Nos</span> CEO at Papa Noe</p>
-                <p>Tienen dedicación y te explican muy bien los trabajos que realizan</p>
+                <div class="col col-sm-12 col-md-3" id="cont_6913809139afa8c26e95ca94c06baa61">
+                    <script type="text/javascript" async
+                        src="https://www.meteored.cl/wid_loader/6913809139afa8c26e95ca94c06baa61"></script>
+                </div>
+        
+                <div class="col col-sm-12 col-md-3" id="cont_6bf98bb064dc30edb6aa354e1728065a">
+                    <script type="text/javascript" async
+                        src="https://www.meteored.cl/wid_loader/6bf98bb064dc30edb6aa354e1728065a"></script>
+                </div>
             </div>
-
-            <div class="container avatar col-sm-6" data-aos="zoom-out-right">
-                <img src="./multimedia/avatar3.jpg" alt="Avatar" style="width:90px">
-                <p><span>Balto Wolf</span> CEO at Mentetiburon</p>
-                <p>Son buenos en lo que hacen</p>
-            </div>
-
-            <div class="container avatar col-sm-6"data-aos="zoom-out-left">
-                <img src="./multimedia/avatar4.jpg"  alt="Avatar" style="width:90px">
-                <p><span>Bad Bunny</span> CEO at Willy Wonka</p>
-                <p>La mejor contratación de servicios que hemos tenido como empresa</p>
-            </div>
-
-            </article>
-        </div>
-
-    <!-- comentarios clientes fin -->
-
-    <h3 class="parrafoOpaco">Enlances de interes e información relevante</h3>
-    <div class="container row clima">
-        <div class="col col-sm-12 col-md-3" id="cont_9ae40633a57ab070e5c0f8d8ec6c24a0">
-            <script type="text/javascript" async
-                src="https://www.meteored.cl/wid_loader/9ae40633a57ab070e5c0f8d8ec6c24a0"></script>
-        </div>
-        <div class="col col-sm-12 col-md-3" id="cont_a2edf0cb7d23085cfb53152a9cc7e613">
-            <script type="text/javascript" async
-                src="https://www.meteored.cl/wid_loader/a2edf0cb7d23085cfb53152a9cc7e613"></script>
-        </div>
+        </section>
     
-        <div class="col col-sm-12 col-md-3" id="cont_6913809139afa8c26e95ca94c06baa61">
-            <script type="text/javascript" async
-                src="https://www.meteored.cl/wid_loader/6913809139afa8c26e95ca94c06baa61"></script>
-        </div>
-    
-        <div class="col col-sm-12 col-md-3" id="cont_6bf98bb064dc30edb6aa354e1728065a">
-            <script type="text/javascript" async
-                src="https://www.meteored.cl/wid_loader/6bf98bb064dc30edb6aa354e1728065a"></script>
-        </div>
-    </div>
-
-
+        <a href="#" class="botonsubir">
+            <button type="button" class="btn btn-primary parrafoOpaco"><i class="fa-solid fa-circle-up" style="color: #0433ff;"></i></button>
+        </a>
+        
     </main>
-    <a href="#" class="botonsubir">
-        <i class="fa-solid fa-arrow-up" style="color: #77bb41;"></i>
-    </a>
+
     <footer class="footer">
         <h4>Home</h4>
         <h4>Terminos y condiciones</h4>
         <h4>Avisos legales</h4>
         <h4>El Ancla ©2023</h4>
         <div class="redes">
-        <a href="https://www.facebook.com"><i class="fa-brands fa-facebook"></i></a>
-        <a href="https://twitter.com"><i class="fa-brands fa-twitter"></i></a>
-        <a href="https://www.instagram.com"><i class="fa-brands fa-instagram"></i></a>
-        <a href=""><i class="fa-brands fa-whatsapp"></i></a>
+        <a href="https://www.facebook.com" target=" blank"><i class="fa-brands fa-facebook"></i></a>
+        <a href="https://twitter.com" target=" blank"><i class="fa-brands fa-twitter"></i></a>
+        <a href="https://www.instagram.com" target=" blank"><i class="fa-brands fa-instagram"></i></a>
+        <a href="" target=" blank"><i class="fa-brands fa-whatsapp"></i></a>
         </div>
     </footer>
 
